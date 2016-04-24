@@ -109,7 +109,7 @@ html {
 body {
     width: 1130px;
     margin: auto;
-    font-size: 1.5em;
+    font-size: 1.4em;
     font-family: Domine, Georgia, serif;
     font-weight: 400;
 }
@@ -132,9 +132,9 @@ nav {
 .hero {
     position: relative;
     background-image: url('../img/sas-surfer-sewage.jpg');
-    background-size: 55%;
+    background-size: 57%;
     background-repeat: no-repeat;
-    background-position: -10%;
+    background-position: -9%;
 }
 
 .img-logo, .img-title {
@@ -163,12 +163,23 @@ nav {
 
 .copy-hero {
     margin-left: 50%;
-    padding: 24em 3em 1.25em 3em;
+    padding: 24em 4em 4em 4em;
     text-align: center;
     background-color: #3E4951;
+    color: #fff;
 }
 
-
+a.cta-btn {
+    display: inline-block;
+    padding: .75em 1.5em;
+    border-radius: 5px;
+    border: 2px solid #fff;
+    font-family: Oswald, sans-serif;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: .75em;
+}
 
 
 
