@@ -169,7 +169,7 @@ nav {
     color: #fff;
 }
 
-a.cta-btn {
+.cta-btn {
     display: inline-block;
     padding: .75em 1.5em;
     border-radius: 5px;
@@ -181,8 +181,18 @@ a.cta-btn {
     font-size: .7em;
 }
 
+/* large copy styles */
 
+.copy-large {
+    padding: 0em 8em;
+}
 
+.copy-large h2 {
+    padding: 0em 2rem;
+    font-size: 3em;
+    font-weight: 700;
+    line-height: 1em;
+}
 
 
 
