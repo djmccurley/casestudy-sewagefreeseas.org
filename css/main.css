@@ -131,6 +131,10 @@ nav {
 
 .hero {
     position: relative;
+    background-image: url('../img/sas-surfer-sewage.jpg');
+    background-size: 55%;
+    background-repeat: no-repeat;
+    background-position: -10%;
 }
 
 .img-logo, .img-title {
@@ -156,18 +160,9 @@ nav {
     top: 2em;
     left: 35%;
 }
-.img-hero {
-    float: left;
-    width: 50%;
-}
-
-.img-hero img {
-
-}
 
 .copy-hero {
-    float: left;
-    width: 50%;
+    margin-left: 50%;
     padding: 24em 3em 1.25em 3em;
     text-align: center;
     background-color: #3E4951;
