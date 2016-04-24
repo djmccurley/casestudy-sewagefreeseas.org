@@ -137,22 +137,32 @@ nav {
     position: absolute;
     text-indent: -9999px;
     background-image: url('../img/sprite.png');
-    background-repeat: no-repeat;
     background-size: 500px 1500px;
+    background-repeat: no-repeat;
 }
 
 .img-logo {
     height: 55px;
     width: 120px;
-
-    background-position: -192.5px -250px;
+    background-position: -193px -250px;
     top: 1.2em;
     left: 55%;
+}
 
+.img-title {
+    height: 400px;
+    width: 500px;
+    background-position: 0 -450px;
+    top: 2em;
+    left: 35%;
 }
 .img-hero {
     float: left;
     width: 50%;
+}
+
+.img-hero img {
+
 }
 
 .copy-hero {
