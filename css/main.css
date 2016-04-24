@@ -95,12 +95,55 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* global styles */
 
+/* border box */
+html {
+  box-sizing: border-box;
+}
 
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 
+body {
+    width: 1130px;
+    margin: auto;
+    font-size: 1.5em;
+    font-family: Domine, Georgia, serif;
+    font-weight: 400;
+}
 
+img {
+    display: block;
+    width: 100%;
+}
+.content-wrapper {
+    padding: 1.25em;
+}
 
+/* fixed nav menu styles */
 
+nav {
+    display: none;
+}
+/* hero section styles */
+
+.hero {
+    position: relative;
+}
+
+.img-hero {
+    float: left;
+    width: 50%;
+}
+
+.copy-hero {
+    float: left;
+    width: 50%;
+    padding: 24em 3em 1.25em 3em;
+    text-align: center;
+}
 
 
 
