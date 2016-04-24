@@ -119,7 +119,7 @@ img {
     width: 100%;
 }
 .content-wrapper {
-    padding: 1.25em;
+    padding: 1em;
 }
 
 /* fixed nav menu styles */
@@ -132,7 +132,7 @@ nav {
 .hero {
     position: relative;
     background-image: url('../img/sas-surfer-sewage.jpg');
-    background-size: 57%;
+    background-size: 56%;
     background-repeat: no-repeat;
     background-position: -9%;
 }
