@@ -133,6 +133,23 @@ nav {
     position: relative;
 }
 
+.img-logo, .img-title {
+    position: absolute;
+    text-indent: -9999px;
+    background-image: url('../img/sprite.png');
+    background-repeat: no-repeat;
+    background-size: 500px 1500px;
+}
+
+.img-logo {
+    height: 55px;
+    width: 120px;
+
+    background-position: -192.5px -250px;
+    top: 1.2em;
+    left: 55%;
+
+}
 .img-hero {
     float: left;
     width: 50%;
@@ -143,6 +160,7 @@ nav {
     width: 50%;
     padding: 24em 3em 1.25em 3em;
     text-align: center;
+    background-color: #3E4951;
 }
 
 
