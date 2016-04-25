@@ -107,8 +107,7 @@ html {
 }
 
 body {
-    width: 1130px;
-    margin: auto;
+    min-width: 1160px;
     font-size: 1.4em;
     font-family: Domine, Georgia, serif;
     font-weight: 400;
@@ -119,7 +118,7 @@ img {
     width: 100%;
 }
 .content-wrapper {
-    padding: 1em;
+    padding: 1.25em;
 }
 
 /* fixed nav menu styles */
@@ -132,7 +131,7 @@ nav {
 .hero {
     position: relative;
     background-image: url('../img/sas-surfer-sewage.jpg');
-    background-size: 56%;
+    background-size: 57%;
     background-repeat: no-repeat;
     background-position: -9%;
 }
@@ -158,7 +157,7 @@ nav {
     width: 500px;
     background-position: 0 -450px;
     top: 2em;
-    left: 35%;
+    left: 35.5%;
 }
 
 .copy-hero {
