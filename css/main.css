@@ -230,6 +230,11 @@ ul.social-tags {
 .social-tags img {
 }
 
+form.sign-up {
+    background: url('../img/bg.jpg');
+    color: #fff;
+    text-align: center;
+}
 
 /* ==========================================================================
    Helper classes
