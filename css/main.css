@@ -193,15 +193,47 @@ nav {
     font-size: 3em;
     font-weight: 700;
     line-height: 1em;
-    border: thin solid red;
 }
 
 .copy-large p {
     padding: 0em 1.5em;
+    font-weight: 400;
 }
 
+.copy-large .cta-pullout {
+    padding: .5em 7em .5em 0em;
+    font-weight: 700;
+}
 
+    .cta-pullout a:link, .cta-pullout a:visited {
+        text-decoration: none;
+        color: #3E4951;
+        border-bottom: 1px #3E4951 solid;
+    }
 
+a.hashtag:link, a.hashtag:visited {
+    text-decoration: none;
+    color: #00ACBA;
+    font-weight: 700;
+}
+
+ul.social-tags {
+    list-style-type: none;
+}
+
+.social-tags li {
+    display: inline-block;
+    border: 1px solid red;
+    margin: 0;
+
+}
+
+.social-tags img {
+    height: 50%;
+    width: 50%;
+    padding: 0;
+
+}
 
 
 /* ==========================================================================
