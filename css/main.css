@@ -223,16 +223,11 @@ ul.social-tags {
 
 .social-tags li {
     display: inline-block;
-    border: 1px solid red;
     margin: 0;
 
 }
 
 .social-tags img {
-    height: 50%;
-    width: 50%;
-    padding: 0;
-
 }
 
 
