@@ -254,10 +254,11 @@ label.form-box, .form-box input {
 label.form-box {
     width: 58%;
     margin: 0 auto 1em auto;
-    text-indent: 10px;
+    text-indent: 15px;
     font-family: Oswald, sans-serif;
     font-size: .6em;
     text-transform: uppercase;
+    line-height: 2.5em;
 
 }
 
@@ -265,11 +266,12 @@ label.form-box {
     width: 100%;
     border-radius: 5px;
     border: none;
-    height: 3em;
-    background-color: rgba(0, 0, 0, 0.25);
-    text-indent: 10px;
+    height: 2.75em;
+    background-color: rgba(13, 13, 13, 0.25);
+    text-indent: 15px;
     font-size: 1.3em;
     font-family: sans-serif;
+    font-weight: lighter;
 }
 
 /* 
@@ -292,6 +294,8 @@ https://css-tricks.com/snippets/css/style-placeholder-text/
 :-ms-input-placeholder {  
    color: rgba(255, 255, 255, 0.1);  
 }
+/* end of borrowed code */
+
 
 /* ==========================================================================
    Helper classes
