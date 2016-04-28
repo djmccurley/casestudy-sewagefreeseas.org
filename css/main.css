@@ -125,8 +125,44 @@ img {
 
 /* fixed nav menu styles */
 
-nav {
-    display: none;
+nav.fixed-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 11rem;
+    height: 28rem;
+    border: 1px solid red;
+    z-index: 999;
+}
+
+a.nav-icon:link, nav a.nav-icon:visited {
+    color: #fff;
+    text-decoration: none;
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+i.fa {
+    display: block;
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 50%;
+    background-color: rgba(62, 73, 81, .05);
+    text-align: center;
+    line-height: 2.5em; /* fancy trick for centering a single line of text*/
+
+}
+
+
+a.social-btn:link, a.social-btn:visited {
+    display: block;
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 50%;
+    border: thin solid green;
 }
 /* hero section styles */
 
