@@ -176,13 +176,17 @@ a.social-btn:link, a.social-btn:visited {
     width: 2.5em;
     height: 2.5em;
     border-radius: 50%;
-    border: 2px solid #fff;
+    border: 2px solid rgba(255, 255, 255, 1);
     margin-bottom: 1em;
     text-indent: -9999px;
     background-image: url('../img/sprite.png');
     background-size: 500px 1500px;
     background-repeat: no-repeat;
 }
+
+a.social-btn:hover, a.social-btn:active {
+    border-color: rgba(255, 255, 255, .25);
+} 
 
 .social-menu a.twitter:link, .social-menu a.twitter:visited {
     background-position: -223px 2px;
