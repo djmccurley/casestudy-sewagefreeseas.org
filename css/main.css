@@ -186,13 +186,23 @@ a.social-btn:link, a.social-btn:visited {
 
 .social-menu a.twitter:link, .social-menu a.twitter:visited {
     background-position: -223px 2px;
+    transition: .6s ease all;
 }
 
+.social-menu a.twitter:hover, .social-menu a.twitter:active {
+    background-position: -223px -48px;
+    transition: .6s ease all;
+}
 
 .social-menu a.facebook:link, .social-menu a.facebook:visited {
     background-position: -224px -99px;
+    transition: .6s ease all;
 }
 
+.social-menu a.facebook:hover, .social-menu a.facebook:active {
+    background-position: -224px -149px;
+    transition: .6s ease all;
+}
 /* hero section styles */
 
 .hero {
