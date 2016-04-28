@@ -194,11 +194,17 @@ nav {
     padding: 1em 8em;
 }
 
+.copy-large .width-container {
+    width: 746px;
+    margin: auto;
+}
+
 .copy-large h2 {
     padding: 0em 2rem;
     font-size: 3em;
     font-weight: 700;
     line-height: 1em;
+    margin: .83em 0 .5em 0;
 }
 
 .copy-large p {
