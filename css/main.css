@@ -131,7 +131,6 @@ nav.fixed-menu {
     left: 0;
     width: 11rem;
     height: 28rem;
-    border: 1px solid red;
     z-index: 999;
 }
 
@@ -165,7 +164,6 @@ i.fa {
 
 /* div.social-menu allows for easier positioning and adding new buttons in future */
 div.social-menu {
-    border: 1px solid blue;
     display: inline-block;
     position: absolute;
     top: 62%;
@@ -180,10 +178,20 @@ a.social-btn:link, a.social-btn:visited {
     border-radius: 50%;
     border: 2px solid #fff;
     margin-bottom: 1em;
+    text-indent: -9999px;
+    background-image: url('../img/sprite.png');
+    background-size: 500px 1500px;
+    background-repeat: no-repeat;
+}
+
+.social-menu a.twitter:link, .social-menu a.twitter:visited {
+    background-position: -223px 2px;
 }
 
 
-
+.social-menu a.facebook:link, .social-menu a.facebook:visited {
+    background-position: -224px -99px;
+}
 
 /* hero section styles */
 
