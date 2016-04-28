@@ -170,6 +170,12 @@ nav {
     color: #fff;
 }
 
+/* width control rules for copy in hero/header */
+.copy-hero p {
+    width: 373px;
+    margin: 1em auto 1.25em auto;
+}
+
 .cta-btn {
     display: inline-block;
     padding: .5em 2em;
