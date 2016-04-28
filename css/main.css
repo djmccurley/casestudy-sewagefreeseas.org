@@ -120,7 +120,7 @@ img {
     width: 100%;
 }
 .content-wrapper {
-    padding: 1.25em;
+    padding: 1.25em 1.25em 0 1.25em;
 }
 
 /* fixed nav menu styles */
@@ -237,7 +237,7 @@ form.sign-up {
     background: url('../img/bg.jpg');
     color: #fff;
     text-align: center;
-    padding: 0 25% 0 25%;
+    padding: 0 25% 3em 25%;
 }
 
 .sign-up h2 {
@@ -254,6 +254,7 @@ p.opt-in {
 .opt-in a {
     color: inherit;
     text-decoration: none;
+    padding-bottom: .1em;
     border-bottom: thin dotted #9BA0A4;
 }
 
@@ -263,7 +264,7 @@ label.form-box, .form-box input {
 }
 
 label.form-box {
-    width: 58%;
+    width: 65%;
     margin: 0 auto 1em auto;
     text-indent: 15px;
     font-family: Oswald, sans-serif;
@@ -287,6 +288,13 @@ label.form-box {
 
 input.checkbox {
     margin-right: .5em;
+}
+
+.sign-up .cta-btn {
+    margin: 1em 0em;
+    background-color: #fff;
+    color: #3E4951;
+    font-weight: bold;
 }
 /* 
 Style for the placholder text taken from -
