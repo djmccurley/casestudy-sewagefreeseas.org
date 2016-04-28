@@ -142,8 +142,16 @@ a.nav-icon:link, nav a.nav-icon:visited {
     top: 12%;
     left: 50%;
     transform: translateX(-50%);
-
 }
+
+/* 
+
+    animation rules for .nav-icon go here
+
+*/
+
+
+
 
 i.fa {
     display: block;
@@ -153,17 +161,30 @@ i.fa {
     background-color: rgba(62, 73, 81, .03);
     text-align: center;
     line-height: 2.5em; /* fancy trick for centering a single line of text*/
-
 }
 
+/* div.social-menu allows for easier positioning and adding new buttons in future */
+div.social-menu {
+    border: 1px solid blue;
+    display: inline-block;
+    position: absolute;
+    top: 62%;
+    left: 50%;
+    transform: translateX(-50%);
+}
 
 a.social-btn:link, a.social-btn:visited {
     display: block;
     width: 2.5em;
     height: 2.5em;
     border-radius: 50%;
-    border: thin solid green;
+    border: 2px solid #fff;
+    margin-bottom: 1em;
 }
+
+
+
+
 /* hero section styles */
 
 .hero {
