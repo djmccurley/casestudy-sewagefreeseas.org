@@ -184,28 +184,28 @@ a.social-btn:link, a.social-btn:visited {
     background-repeat: no-repeat;
 }
 
-a.social-btn:hover, a.social-btn:active {
+a.social-btn:hover, a.social-btn:active, a.cta-btn:hover, a.cta-btn:active {
     border-color: rgba(255, 255, 255, .25);
 } 
 
 .social-menu a.twitter:link, .social-menu a.twitter:visited {
     background-position: -223px 2px;
-    transition: .6s ease all;
+    transition: .6s ease background-position;
 }
 
 .social-menu a.twitter:hover, .social-menu a.twitter:active {
     background-position: -223px -48px;
-    transition: .6s ease all;
+    transition: .6s ease background-position;
 }
 
 .social-menu a.facebook:link, .social-menu a.facebook:visited {
     background-position: -224px -99px;
-    transition: .6s ease all;
+    transition: .6s ease background-position;
 }
 
 .social-menu a.facebook:hover, .social-menu a.facebook:active {
     background-position: -224px -149px;
-    transition: .6s ease all;
+    transition: .6s ease background-position;
 }
 /* hero section styles */
 
@@ -255,11 +255,11 @@ a.social-btn:hover, a.social-btn:active {
     margin: 1em auto 1.25em auto;
 }
 
-.cta-btn {
+.cta-btn:link, .cta-btn:visited {
     display: inline-block;
     padding: .5em 2em;
     border-radius: 5px;
-    border: 2px solid #fff;
+    border: 2px solid rgba(255, 255, 255, 1);
     font-family: Oswald, sans-serif;
     text-decoration: none;
     color: #fff;
@@ -381,11 +381,16 @@ input.checkbox {
     margin-right: .5em;
 }
 
-.sign-up .cta-btn {
+.sign-up .cta-btn:link, .sign-up .cta-btn:visited {
     margin: 1em 0em;
     background-color: #fff;
     color: #3E4951;
     font-weight: bold;
+}
+
+.sign-up .cta-btn:hover, .sign-up .cta-btn:active {
+    border: 2px solid #fff;
+    color: #00ACBA;
 }
 /* 
 Style for the placholder text taken from -
