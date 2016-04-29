@@ -296,16 +296,23 @@ a.social-btn:hover, a.social-btn:active, a.cta-btn:hover, a.cta-btn:active {
     font-weight: 700;
 }
 
-    .cta-pullout a:link, .cta-pullout a:visited {
-        text-decoration: none;
-        color: #3E4951;
-        border-bottom: 1px #3E4951 solid;
-    }
+.cta-pullout a:link, .cta-pullout a:visited {
+    text-decoration: none;
+    color: #3E4951;
+    border-bottom: 1px #3E4951 solid;
+}
 
+.cta-pullout a:hover, .cta-pullout a:active {
+    border-bottom-style: dotted;
+}
 a.hashtag:link, a.hashtag:visited {
     text-decoration: none;
     color: #00ACBA;
     font-weight: 700;
+}
+
+a.hashtag:hover, a.hashtag:active {
+    color: #3E4951;
 }
 
 ul.social-tags {
@@ -324,6 +331,10 @@ ul.social-tags {
 
 /* Sign Up Form styles */
 
+.sign-up .width-container {
+    width: 552px;
+    margin: auto;
+}
 form.sign-up {
     background: url('../img/bg.jpg');
     color: #fff;
@@ -342,11 +353,15 @@ p.opt-in {
     color: #9BA0A4;
 }
 
-.opt-in a {
+.opt-in a:link, .opt-in a:visited {
     color: inherit;
     text-decoration: none;
     padding-bottom: .1em;
     border-bottom: thin dotted #9BA0A4;
+}
+
+.opt-in a:hover, .opt-in a:active {
+    border-bottom-style: solid;
 }
 
 label.form-box, .form-box input {
@@ -375,6 +390,10 @@ label.form-box {
     font-size: 1.3em;
     font-family: sans-serif;
     font-weight: lighter;
+}
+
+.form-box input:hover, .form-box input:focus {
+    background-color: rgba(13, 13, 13, 0.39);
 }
 
 input.checkbox {
