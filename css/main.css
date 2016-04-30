@@ -476,6 +476,16 @@ https://css-tricks.com/snippets/css/style-placeholder-text/
     padding: 0;
     line-height: 2em;
 }
+
+.info-menu ul.site-pages {
+    font-size: 2em;
+    line-height: 1.4em;
+    margin: .5em 0;
+}
+
+.info-menu li.current-page {
+    text-decoration: line-through;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
