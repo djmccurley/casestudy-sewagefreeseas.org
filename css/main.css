@@ -113,6 +113,7 @@ body {
     font-weight: 400;
     line-height: 1.5em;
     color: #3E4951;
+    background-image: url(../img/bg.jpg);
 }
 
 img {
@@ -122,6 +123,7 @@ img {
 .content-wrapper {
     padding: 1.25em 1.25em 0 1.25em;
     background-color: #fff;
+    transition: .6s ease-in transform;
 }
 
 /* info-menu animation rules */
@@ -132,8 +134,7 @@ body.show-menu {
 
 body.show-menu .content-wrapper {
     transform:translateX(100%);
-    display: none !important;
-
+    transition: .6s ease-in transform;
 } 
 
 /* fixed nav menu styles */
