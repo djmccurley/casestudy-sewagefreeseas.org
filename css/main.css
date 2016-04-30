@@ -121,7 +121,20 @@ img {
 }
 .content-wrapper {
     padding: 1.25em 1.25em 0 1.25em;
+    background-color: #fff;
 }
+
+/* info-menu animation rules */
+
+body.show-menu {
+    overflow-x: hidden;
+}
+
+body.show-menu .content-wrapper {
+    transform:translateX(100%);
+    /*display: none !important;*/
+
+} 
 
 /* fixed nav menu styles */
 
@@ -437,7 +450,32 @@ https://css-tricks.com/snippets/css/style-placeholder-text/
 }
 /* end of borrowed code */
 
+/* hidden/slideout info-menu styles*/
 
+.info-menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -10;
+    background-image: url(../img/bg.jpg);
+    width: 100%;
+    padding: 4rem 0em 4rem 13.5rem;
+}
+
+.info-menu h3{
+    font-family: Oswald, sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: .7em;
+    padding-top: 2rem;
+}
+
+.info-menu ul {
+    color: #6D737A;
+    list-style-type: none;
+    padding: 0;
+    line-height: 2em;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
