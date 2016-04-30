@@ -132,7 +132,7 @@ body.show-menu {
 
 body.show-menu .content-wrapper {
     transform:translateX(100%);
-    /*display: none !important;*/
+    display: none !important;
 
 } 
 
@@ -459,10 +459,10 @@ https://css-tricks.com/snippets/css/style-placeholder-text/
     z-index: -10;
     background-image: url(../img/bg.jpg);
     width: 100%;
-    padding: 4rem 0em 4rem 13.5rem;
+    padding: 4rem 0em 2.5rem 13.5rem;
 }
 
-.info-menu h3{
+.info-menu h3 {
     font-family: Oswald, sans-serif;
     color: #fff;
     text-transform: uppercase;
@@ -471,10 +471,10 @@ https://css-tricks.com/snippets/css/style-placeholder-text/
 }
 
 .info-menu ul {
-    color: #6D737A;
     list-style-type: none;
     padding: 0;
     line-height: 2em;
+    font-size: 1.3rem;
 }
 
 .info-menu ul.site-pages {
@@ -483,6 +483,20 @@ https://css-tricks.com/snippets/css/style-placeholder-text/
     margin: .5em 0;
 }
 
+.info-menu a:link, .info-menu a:visited {
+    color: #6D737A;
+    text-decoration: none;
+}
+
+.info-menu a:hover, .info-menu a:active {
+    color: #fff;
+}
+
+span.subtitle, span.subtitle:hover, span.subtitle:active {
+    color: #4E545C;
+}
+
+/* the line-through rule is probably using js in the original site */
 .info-menu li.current-page {
     text-decoration: line-through;
 }
