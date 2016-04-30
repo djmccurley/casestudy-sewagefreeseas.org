@@ -135,8 +135,19 @@ body.show-menu {
 body.show-menu .content-wrapper {
     transform:translateX(100%);
     transition: .6s ease-in transform;
+
 } 
 
+/* 
+z-index change makes links work when 
+content-wrapper hidden
+*/
+
+body.show-menu .info-menu {
+    z-index: 10;
+    transition: 0s z-index;
+    transition-delay: .6s;
+}
 /* fixed nav menu styles */
 
 nav.fixed-menu {
