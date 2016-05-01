@@ -95,9 +95,8 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-/* global styles */
+/* global styles and border-box */
 
-/* border box */
 html {
   box-sizing: border-box;
 }
@@ -113,49 +112,13 @@ body {
     font-weight: 400;
     line-height: 1.5em;
     color: #3E4951;
-    background-image: url(../img/bg.jpg);
+    background-image: url('../img/bg.jpg');
 }
 
 img {
     display: block;
     width: 100%;
 }
-.content-wrapper {
-    padding: 1.25em 1.25em 0 1.25em;
-    background-color: #fff;
-    transition: .6s ease-in transform;
-}
-
-/* info-menu animation rules */
-
-body.show-menu {
-    overflow-x: hidden;
-}
-
-/* 
-margin-top solution found here:
-http://fvsch.com/code/transition-fade/test5.html
-*/
-
-body.show-menu .content-wrapper {
-    transform:translateX(100%);
-    margin-top: -10000px; 
-    transition: transform .6s ease-in, margin-top 0s .6s;
-} 
-
-/* 
-z-index change makes links work when 
-content-wrapper hidden, but keeps extra space below
-menu content. Leaving it in here so you can see
-the alternate to using negative margin.
-
-
-body.show-menu .info-menu {
-    z-index: 10;
-    transition: 0s z-index;
-    transition-delay: .6s;
-}
-*/
 
 /* fixed nav menu styles */
 
@@ -165,10 +128,11 @@ nav.fixed-menu {
     left: 0;
     width: 11rem;
     height: 28rem;
-    z-index: 999;
+    z-index: 99;
 }
 
-a.nav-icon:link, nav a.nav-icon:visited {
+a.nav-icon:link, a.nav-icon:visited, 
+a.nav-icon:hover, a.nav-icon:active {
     color: #fff;
     text-decoration: none;
     position: absolute;
@@ -184,10 +148,15 @@ i.fa {
     border-radius: 50%;
     background-color: rgba(62, 73, 81, .03);
     text-align: center;
-    line-height: 2.5em; /* fancy trick for centering a single line of text*/
+    /* line-height = fancy trick for centering a single line of text */
+    line-height: 2.5em; 
 }
 
-/* div.social-menu allows for easier positioning and adding new buttons in future */
+/*  
+    div.social-menu allows for easier positioning 
+    and adding new social buttons in future 
+*/
+
 div.social-menu {
     display: inline-block;
     position: absolute;
@@ -213,6 +182,11 @@ a.social-btn:hover, a.social-btn:active, a.cta-btn:hover, a.cta-btn:active {
     border-color: rgba(255, 255, 255, .25);
 } 
 
+/*  
+    There is probably a better/more modular way
+    of animating these buttons with more time
+*/
+
 .social-menu a.twitter:link, .social-menu a.twitter:visited {
     background-position: -223px 2px;
     transition: .6s ease background-position;
@@ -232,6 +206,15 @@ a.social-btn:hover, a.social-btn:active, a.cta-btn:hover, a.cta-btn:active {
     background-position: -224px -149px;
     transition: .6s ease background-position;
 }
+
+/* content-wrapper styles */
+
+.content-wrapper {
+    padding: 1.25em 1.25em 0 1.25em;
+    background-color: #fff;
+    transition: .5s ease-in transform;
+}
+
 /* hero section styles */
 
 .hero {
@@ -274,7 +257,7 @@ a.social-btn:hover, a.social-btn:active, a.cta-btn:hover, a.cta-btn:active {
     color: #fff;
 }
 
-/* width control rules for copy in hero/header */
+/* width control rules for copy in hero */
 .copy-hero p {
     width: 373px;
     margin: 1em auto 1.25em auto;
@@ -292,7 +275,12 @@ a.social-btn:hover, a.social-btn:active, a.cta-btn:hover, a.cta-btn:active {
     font-size: .7em;
 }
 
-/* large copy styles */
+/*  
+    .cta-btn hover/active rules are above
+    on lines 181 & 182
+*/
+
+/* article (large copy) styles */
 
 .copy-large {
     padding: 1em 8em;
@@ -330,6 +318,7 @@ a.social-btn:hover, a.social-btn:active, a.cta-btn:hover, a.cta-btn:active {
 .cta-pullout a:hover, .cta-pullout a:active {
     border-bottom-style: dotted;
 }
+
 a.hashtag:link, a.hashtag:visited {
     text-decoration: none;
     color: #00ACBA;
@@ -354,12 +343,13 @@ ul.social-tags {
 .social-tags img {
 }
 
-/* Sign Up Form styles */
+/* Sign up form styles */
 
 .sign-up .width-container {
     width: 552px;
     margin: auto;
 }
+
 form.sign-up {
     background: url('../img/bg.jpg');
     color: #fff;
@@ -402,7 +392,6 @@ label.form-box {
     font-size: .55em;
     text-transform: uppercase;
     line-height: 2.5em;
-
 }
 
 .form-box input {
@@ -436,8 +425,9 @@ input.checkbox {
     border: 2px solid #fff;
     color: #00ACBA;
 }
+
 /* 
-Style for the placholder text taken from -
+Style rules for placholder text taken from -
 https://css-tricks.com/snippets/css/style-placeholder-text/
 */
 
@@ -460,9 +450,39 @@ https://css-tricks.com/snippets/css/style-placeholder-text/
    color: rgba(255, 255, 255, 0.1);  
    letter-spacing: 1px;
 }
-/* end of borrowed code */
 
-/* hidden/slideout info-menu styles*/
+/* info menu styles and hidden/slideout animation rules */
+
+body.show-menu {
+    overflow-x: hidden;
+}
+
+body.show-menu .content-wrapper {
+    transform:translateX(100%);
+    margin-top: -10000px; 
+    transition: transform .5s ease-in, margin-top 0s .5s;
+} 
+
+/*  ===============================
+
+Two solutions to keep animations AND make info-menu useable:
+    1) Negative margin-top (used above) OR
+    2) z-index change (not used)
+
+1)  margin-top fixes problem with extra space on the bottom of menu,
+    solution found here:
+        http://fvsch.com/code/transition-fade/test5.html
+
+2)  z-index change makes menu links work when 
+    content-wrapper hidden, but keeps extra space below
+    menu content. Z-index solution rules here:
+
+        body.show-menu .info-menu {
+            z-index: 10;
+            transition: 0s z-index; 
+            transition-delay: .6s;
+        }
+    =================================  */
 
 .info-menu {
     position: absolute;
@@ -470,6 +490,7 @@ https://css-tricks.com/snippets/css/style-placeholder-text/
     left: 0;
     z-index: -10;
     background-image: url(../img/bg.jpg);
+    width: 100%;
     min-width: 1160px;
     padding: 4rem 0em 2.5rem 0%;
     transition: padding-left .6s ease;
@@ -479,6 +500,7 @@ https://css-tricks.com/snippets/css/style-placeholder-text/
     padding-left: 20%;
     transition: padding-left .6s ease;
 }
+
 .info-menu h3 {
     font-family: Oswald, sans-serif;
     color: #fff;
@@ -513,10 +535,20 @@ span.subtitle, span.subtitle:hover, span.subtitle:active {
     color: #4E545C;
 }
 
-/* the line-through rule is probably using js in the original site */
+/*  
+    the line-through style is probably 
+    using js on the original site 
+*/
+
 .info-menu li.current-page {
     text-decoration: line-through;
 }
+
+/*  ====================
+    End of Author's styles
+    ==================== */
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
