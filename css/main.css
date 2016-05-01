@@ -132,22 +132,31 @@ body.show-menu {
     overflow-x: hidden;
 }
 
+/* 
+margin-top solution found here:
+http://fvsch.com/code/transition-fade/test5.html
+*/
+
 body.show-menu .content-wrapper {
     transform:translateX(100%);
-    margin-top: -10000px;
+    margin-top: -10000px; 
     transition: transform .6s ease-in, margin-top 0s .6s;
 } 
 
 /* 
 z-index change makes links work when 
-content-wrapper hidden
-*/
+content-wrapper hidden, but keeps extra space below
+menu content. Leaving it in here so you can see
+the alternate to using negative margin.
+
 
 body.show-menu .info-menu {
-/*    z-index: 10;
+    z-index: 10;
     transition: 0s z-index;
-    transition-delay: .6s;*/
+    transition-delay: .6s;
 }
+*/
+
 /* fixed nav menu styles */
 
 nav.fixed-menu {
@@ -167,15 +176,6 @@ a.nav-icon:link, nav a.nav-icon:visited {
     left: 50%;
     transform: translateX(-50%);
 }
-
-/* 
-
-    animation rules for .nav-icon go here
-
-*/
-
-
-
 
 i.fa {
     display: block;
@@ -470,10 +470,15 @@ https://css-tricks.com/snippets/css/style-placeholder-text/
     left: 0;
     z-index: -10;
     background-image: url(../img/bg.jpg);
-    width: 100%;
-    padding: 4rem 0em 2.5rem 13.5rem;
+    min-width: 1160px;
+    padding: 4rem 0em 2.5rem 0%;
+    transition: padding-left .6s ease;
 }
 
+.show-menu .info-menu {
+    padding-left: 20%;
+    transition: padding-left .6s ease;
+}
 .info-menu h3 {
     font-family: Oswald, sans-serif;
     color: #fff;
