@@ -134,8 +134,8 @@ body.show-menu {
 
 body.show-menu .content-wrapper {
     transform:translateX(100%);
-    transition: .6s ease-in transform;
-
+    margin-top: -10000px;
+    transition: transform .6s ease-in, margin-top 0s .6s;
 } 
 
 /* 
@@ -144,9 +144,9 @@ content-wrapper hidden
 */
 
 body.show-menu .info-menu {
-    z-index: 10;
+/*    z-index: 10;
     transition: 0s z-index;
-    transition-delay: .6s;
+    transition-delay: .6s;*/
 }
 /* fixed nav menu styles */
 
